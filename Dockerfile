@@ -3,11 +3,11 @@ FROM python:3-alpine
 ENV PGADMIN4_VERSION 1.6
 
 # Metadata
-LABEL org.label-schema.name="pgAdmin4" \
+LABEL org.label-schema.name="pgadmin4" \
       org.label-schema.version="$PGADMIN4_VERSION" \
       org.label-schema.license="PostgreSQL" \
       org.label-schema.url="https://www.pgadmin.org" \
-      org.label-schema.vcs-url="https://github.com/Abo10/pgAdmin4" 
+      org.label-schema.vcs-url="https://github.com/Abo10/pgadmin4" 
 
 RUN set -ex \
 	&& apk add --no-cache --virtual .run-deps \
