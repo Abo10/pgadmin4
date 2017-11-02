@@ -1,6 +1,6 @@
 FROM python:3-alpine
 
-ENV PGADMIN4_VERSION 1.6
+ENV PGADMIN4_VERSION 2.0
 
 # Metadata
 LABEL org.label-schema.name="pgadmin4" \
