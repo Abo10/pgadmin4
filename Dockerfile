@@ -1,4 +1,4 @@
-FROM python:3-alpine
+FROM python:3-alpine3.6
 
 ENV PGADMIN4_VERSION 2.1
 
@@ -12,7 +12,6 @@ LABEL org.label-schema.name="pgadmin4" \
 RUN set -ex \
 	&& apk add --no-cache --virtual .run-deps \
 		bash \
-		postgresql \
 		postgresql-libs \
 	&& apk add --no-cache --virtual .build-deps \
 		openssl \
