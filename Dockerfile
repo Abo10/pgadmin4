@@ -12,6 +12,7 @@ LABEL org.label-schema.name="pgadmin4" \
 RUN set -ex \
 	&& apk add --no-cache --virtual .run-deps \
 		bash \
+		postgresql \
 		postgresql-libs \
 	&& apk add --no-cache --virtual .build-deps \
 		openssl \
