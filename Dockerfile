@@ -9,6 +9,7 @@ LABEL org.label-schema.name="pgadmin4" \
       org.label-schema.url="https://www.pgadmin.org" \
       org.label-schema.vcs-url="https://github.com/Abo10/pgadmin4" 
 
+RUN pip install --upgrade pip
 RUN set -ex \
 	&& apk add --no-cache --virtual .run-deps \
 		bash \
